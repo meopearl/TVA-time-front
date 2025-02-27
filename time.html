@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock & Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Clock</a></li>
+                <li><a href="#">Timer</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="welcome-text">
+        <h1>Well, howdy there, partner!<br> Welcome to the Sacred Timeline!</h1>
+        <p>I'm Miss Time, here to keep y'all on schedule.<br> Don't go causin' any time anomalies now, ya hear?</p>
+    </div>
+
+    <main>
+        <section class="clock-container">
+            <h2>Current Time</h2>
+            <div id="clock"></div>
+        </section>
+
+        <section class="timer-container">
+            <h2>Set Timer</h2>
+            <div class="timer-controls">
+                <input type="number" id="minutes" placeholder="Minutes" min="0">
+                <input type="number" id="seconds" placeholder="Seconds" min="0" max="59">
+                <button id="startTimer">Start</button>
+                <button id="resetTimer">Reset</button>
+            </div>
+            <div id="timerDisplay">00:00</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Clock & Timer Web App | TVA Approved ✔️</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
